@@ -17,7 +17,7 @@ function addBook() {
 
 function deleteBook(bookItem) {
     const bookObject = findBookById(bookItem.id)
-
+    console.log(findBookIndexById(bookItem.id))
     if (confirm(`Yakin mau menghapus buku dengan judul "${bookObject.title}"?`)) {
         alert(`Buku dengan judul "${bookObject.title}" sudah di hapus`)
         books.splice(findBookIndexById(bookItem.id), 1)
@@ -26,6 +26,7 @@ function deleteBook(bookItem) {
     } else {
         alert(`Buku dengan judul "${bookObject.title}" tidak jadi dihapus`)
     }
+    updateBookToStorage()
 }
 
 function editBook(bookItem) {
