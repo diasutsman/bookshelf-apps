@@ -18,4 +18,4 @@ document.addEventListener('onbooksaved', () => console.log('Buku berhasil disimp
 document.addEventListener('ondataloaded', () => refreshBookFromBooks())
 
 // automatically change year of copyright
-setInterval(() => document.querySelector('footer p span').innerText = new Date().getFullYear(), 1000)
+setInterval(() => document.querySelector('footer p span').innerText = new Date().getFullYear(), 1)
