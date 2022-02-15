@@ -8,7 +8,7 @@
     <title>Bookshelf Apps</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="head_bar">
@@ -41,9 +41,7 @@
     <section class="search_section">
         <h2>Cari Buku (Opsional)</h2>
         <form id="searchBook">
-            <label for="searchBookTitle">Judul</label>
-            <input id="searchBookTitle" type="text">
-            <button id="searchSubmit" type="submit">Cari</button>
+            <input id="searchBookTitle" type="text" placeholder="Judul (Ketik sesuatu untuk mencari)">
         </form>
     </section>
 
@@ -55,10 +53,11 @@
                            <h3>Book Title</h3>
                            <p>Penulis: John Doe</p>
                            <p>Tahun: 2002</p>
-                        
+                           
                            <div class="action">
                                <button class="green">Selesai dibaca</button>
                                <button class="red">Hapus buku</button>
+                               <img class="editbtn" src="img/pencil.png">
                            </div>
                        </article>-->
         </div>
@@ -74,6 +73,7 @@
                            <p>Tahun: 2002</p>
                            <div class="action">
                                <button class="green">Belum selesai di Baca</button>
+                               <button class="yellow">Edit buku</button>
                                <button class="red">Hapus buku</button>
                            </div>
                        </article>-->
@@ -81,7 +81,11 @@
     </section>
 </main>
 
-<script src="main.js"></script>
+<script src="js/variables.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/main.js"></script>
+
 
 </body>
 </html>
