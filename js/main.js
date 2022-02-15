@@ -16,3 +16,6 @@ if (isStorageExist()) {
 document.addEventListener('onbooksaved', () => console.log('Buku berhasil disimpan'))
 
 document.addEventListener('ondataloaded', () => refreshBookFromBooks())
+
+// automatically change year of copyright
+setInterval(() => document.querySelector('footer p span').innerText = new Date().getFullYear(), 1000)

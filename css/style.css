@@ -185,3 +185,13 @@ p {
     background-color: gold;
     color: white;
 }
+
+/* copyright footer */
+footer {
+    margin: auto;
+    margin-top: 16px;
+    padding: 16px;
+    background-color: cornflowerblue;
+    color: #ffffff;
+    text-align:center;
+}
