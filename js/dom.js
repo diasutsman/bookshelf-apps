@@ -23,10 +23,10 @@ function deleteBook(bookItem) {
         books.splice(findBookIndexById(bookItem.id), 1)
         bookItem.remove()
         refreshBookFromBooks()
+        updateBookToStorage()
     } else {
         alert(`Buku dengan judul "${bookObject.title}" tidak jadi dihapus`)
     }
-    updateBookToStorage()
 }
 
 function editBook(bookItem) {
